@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #C4C4C4;
+}
+
+header {
+    background: #EDB70C;
+    margin: 0;
+    padding-top: 1px;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+
+nav li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: black;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.intro-img {
+    display: none;
+}
+
+.card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    height: 165px;
+    font-size: 48px;
+    padding: 60px 30px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDB70C;
+    margin-top: -4px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr ;
+    grid-template-rows: 20px 1fr 20px 1fr 20px;
+
+    grid-template-areas: 
+    " . . . "
+    " . c . "
+    " . . . "
+    " . f . "
+    " . . . "
+    ;
+}
+
+.contact-form {
+    grid-area: f;
+}
+
+.contact-info {
+    grid-area: c;
+}
+
+.gmap_canvas {
+    grid-area: f;
+    border-radius: 20px;
+}
+
+.canvas_map {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    align-items: center;
+}
+
+.contact-info,
+form{
+    /* max-width: 350px; */
+    padding: 20px;
+    /* margin: 50px auto; */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h3 {
+    text-decoration: underline;
+}
+
+
+form input,
+form textarea {
+    border-radius: 10px;
+    background: #C4C4C4;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.submitBtn {
+    font-size: 18px;
+    background: #C4C4C4;
+    color: #000;
+    font-weight: 700;
+}
+
+.submitBtn:hover, 
+.submitBtn:focus {
+    background: #EDB70C;
+    color: #fff;
+}
+
+
+
+.openingstijden {
+    list-style: none;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+
+#ytplayer {
+    height: 80vh;
+    width: 100%;
+}
+
+@media  (min-width: 700px) {
+    .card-section {
+        display: flex;
+        height: 450px;
+        margin-bottom: 20px;
+
+        }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header h3 {
+        margin-left: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    nav li {
+        padding: 0 50px;
+    }
+
+    .midle-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midle-card div {
+        order: -1;
+
+    }
+
+    .midle-card {
+        margin-top: -4px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact-section {
+        background: rgba(0, 0, 0, 0.3);
+        margin: 50px;
+        border-radius: 20px;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px 1fr 100px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+        " . . . . . "
+        " . c . f . "
+        " . . . . . "
+        ;
+    }
+
+    .intro-img {
+        display: block;
+        width: 500px;
+        margin: 20px auto;
+    }
+
+    .intro {
+        display: flex;
+    }
+
+    .intro-element {
+        margin: 30px;
+    }
+}
